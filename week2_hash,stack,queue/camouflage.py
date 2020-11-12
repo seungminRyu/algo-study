@@ -17,7 +17,7 @@ def solution(clothes):
         answer *= i
     answer -= 1
 
-    print(answer)    
+    print(answer)
     
 testcase1 = [["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]]
 testcase2 = [["crow_mask", "face"], ["blue_sunglasses", "face"], ["smoky_makeup", "face"]]
