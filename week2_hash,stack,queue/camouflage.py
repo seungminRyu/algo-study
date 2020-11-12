@@ -3,12 +3,10 @@ def solution(clothes):
     answer = 1
     
     for set in clothes:
-        cloth = set[0]
         clothType = set[1]
         if(clothType in clothHash):
             clothHash[clothType] += 1
         else:
-            clothHash[clothType] = []
             clothHash[clothType] = 2
     
     typeNum = list(clothHash.values())
