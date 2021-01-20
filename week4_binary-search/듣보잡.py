@@ -21,8 +21,8 @@ def binarySearch(target, start, end, data):
 
     mid = (start + end) // 2
 
-    if data[mid] == target:
-        return data[mid]
+            if data[mid] == target:
+         return data[mid]
     elif data[mid] > target:
         end = mid - 1
     else:
