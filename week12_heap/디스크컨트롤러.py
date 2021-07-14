@@ -1,0 +1,20 @@
+def solution(jobs):
+    answer = 0
+    start = 0
+    l = len(jobs)
+    jobs = sorted(jobs, key=lambda t: t[1])
+    
+    while len(jobs) != 0:
+        for i in range(len(jobs)):
+            if  jobs[i][0] <= start:
+                start += jobs[i][1]
+                answer += start - jobs[i][0]
+                jobs.pop(i)
+                break
+            if i == len(jobs) - 1:
+                start += 1
+    
+    return answer // l
+
+jobs = [[0, 3], [2, 9], [1, 6]]
+solution(jobs)
